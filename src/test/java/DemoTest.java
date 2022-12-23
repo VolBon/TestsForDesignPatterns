@@ -24,38 +24,38 @@ public class DemoTest extends BaseTest {
         home.setBookingStrategy(typeOfTrip); //new OneWayTrip(driver, section)
         home.checkAvailability(reservationDetails);
     }
-//    @Test
-//    public void flightFooterTest() {
-//        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-//        WebDriver driver = new ChromeDriver();
-//        HomePage home = new HomePage(driver);
-//        home.goToPage();
-//        FooterBar footer = home.getFooter();
-//        footer.getLinksCount();
-//        footer.selectFlight();
-//        driver.quit();
-//    }
-//
-//    @Test
-//    public void flightNavigationTest() {
-//        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-//        WebDriver driver = new ChromeDriver();
-//        HomePage home = new HomePage(driver);
-//        home.goToPage();
-//        home.getNavigationBar().selectFlight();
-//        home.getNavigationBar().getLinksCount();
-//        driver.quit();
-//    }
-//
-//    @Test
-//    public void hamburgerTest() {
-//        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-//        WebDriver driver = new ChromeDriver();
-//        HomePage home = new HomePage(driver);
-//        home.goToPage();
-//        //home.getNavigationBar().clickHamburger();
-//        //driver.quit();
-//    }
+    @Test
+    public void flightFooterTest() {
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        WebDriver driver = new ChromeDriver();
+        HomePage home = new HomePage(driver);
+        home.goToPage();
+        FooterBar footer = home.getFooter();
+        footer.getLinksCount();
+        footer.selectFlight();
+        driver.quit();
+    }
+
+    @Test
+    public void flightNavigationTest() {
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        WebDriver driver = new ChromeDriver();
+        HomePage home = new HomePage(driver);
+        home.goToPage();
+        home.getNavigationBar().selectFlight();
+        home.getNavigationBar().getLinksCount();
+        driver.quit();
+    }
+
+    @Test
+    public void hamburgerTest() {
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        WebDriver driver = new ChromeDriver();
+        HomePage home = new HomePage(driver);
+        home.goToPage();
+        //home.getNavigationBar().clickHamburger();
+        //driver.quit();
+    }
 
     @BeforeTest
     public void init() {
