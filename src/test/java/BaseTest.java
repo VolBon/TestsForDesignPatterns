@@ -14,7 +14,7 @@ import java.util.List;
 public class BaseTest {
 
     public WebDriver initializeDriver() {
-        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/TestAfterArtifactoryUpdate/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--window-size=1000,700");
         options.addArguments("--headless");
