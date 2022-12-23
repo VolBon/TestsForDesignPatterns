@@ -1,0 +1,14 @@
+[
+  {
+    "origin":"AIP",
+    "destination":"BHO",
+    "origin2":"GOI",
+    "destination2":"COK"
+  },
+  {
+    "origin":"AIP",
+    "destination":"BKK",
+    "origin2":"BKK",
+    "destination2":"COK"
+  }
+]
