@@ -30,7 +30,6 @@ public class DemoTest extends BaseTest {
         FooterBar footer = home.getFooter();
         footer.getLinksCount();
         footer.selectFlight();
-        driver.quit();
     }
 
     @Test
@@ -38,14 +37,12 @@ public class DemoTest extends BaseTest {
         home.goToPage();
         home.getNavigationBar().selectFlight();
         home.getNavigationBar().getLinksCount();
-        driver.quit();
     }
 
     @Test
     public void hamburgerTest() {
         home.goToPage();
         //home.getNavigationBar().clickHamburger();
-        //driver.quit();
     }
 
     @BeforeTest
