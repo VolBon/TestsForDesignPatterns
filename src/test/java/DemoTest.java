@@ -26,9 +26,6 @@ public class DemoTest extends BaseTest {
     }
     @Test
     public void flightFooterTest() {
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-        WebDriver driver = new ChromeDriver();
-        HomePage home = new HomePage(driver);
         home.goToPage();
         FooterBar footer = home.getFooter();
         footer.getLinksCount();
@@ -38,9 +35,6 @@ public class DemoTest extends BaseTest {
 
     @Test
     public void flightNavigationTest() {
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-        WebDriver driver = new ChromeDriver();
-        HomePage home = new HomePage(driver);
         home.goToPage();
         home.getNavigationBar().selectFlight();
         home.getNavigationBar().getLinksCount();
@@ -49,9 +43,6 @@ public class DemoTest extends BaseTest {
 
     @Test
     public void hamburgerTest() {
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-        WebDriver driver = new ChromeDriver();
-        HomePage home = new HomePage(driver);
         home.goToPage();
         //home.getNavigationBar().clickHamburger();
         //driver.quit();
