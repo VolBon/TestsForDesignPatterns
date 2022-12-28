@@ -18,6 +18,7 @@ public class BaseTest {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--window-size=1000,700");
         options.addArguments("--headless");
+        options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
         WebDriver driver = new ChromeDriver(options);
         return driver;
     }
