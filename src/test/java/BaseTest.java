@@ -16,8 +16,8 @@ public class BaseTest {
     public WebDriver initializeDriver() {
         System.setProperty("webdriver.chrome.driver", "/home/volodymyrbonetskyy/Downloads/chromedriver");
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
-        options.addArguments("--window-size=1000,700");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--headless");
         WebDriver driver = new ChromeDriver(options);
         return driver;
